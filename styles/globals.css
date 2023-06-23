@@ -1,0 +1,18 @@
+:root {
+  --black: #191516;
+  --white: #F2ECEC;
+  --light-blue: #03F7EB;
+  --pink: #AB2346;
+  --light-green: #00B295;
+  --white-op-50: rgba(242, 236, 236, 0.5);
+  --gradient: #03F7EB,  #218CC8;
+  --box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.37)
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
