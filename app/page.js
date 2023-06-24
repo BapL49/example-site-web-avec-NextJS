@@ -1,6 +1,6 @@
 import PrimaryButton from "@/components/buttons/primaryButton";
 
-import Styles from '../styles/page.module.css'
+import Styles from '../styles/index.module.css'
 import { archivoBlack, comfortaa } from "./font";
 import Image from "next/image";
 

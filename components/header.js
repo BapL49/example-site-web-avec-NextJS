@@ -15,7 +15,7 @@ import SecondaryButton from "./buttons/secondaryButton"
 export default function Header() {
 
     const pathname = usePathname();
-    const style = {textDecoration: "underline"}
+
 
     return (
         <header id={Styles.header}>
@@ -27,7 +27,8 @@ export default function Header() {
             /></Link>
 
             <nav id={Styles.nav} className={comfortaa.variable}>
-                <Link href="/about" id={Styles.link} styles={pathname === "/about" ? style : ""} >What's Brushed ?</Link>
+                <Link href='/about' id={Styles.link} className={pathname == "/about" ? Styles.link_active : ""} >What's Brushed ?</Link>
+                <Link href='/designs' id={Styles.link} className={pathname == "/designs" ? Styles.link_active : ""} >Discover some design</Link>
                 <SecondaryButton href="/supportUs" text="support us" />
             </nav>
         </header>
