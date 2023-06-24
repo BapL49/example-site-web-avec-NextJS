@@ -9,7 +9,7 @@ export default function About() {
 
     return (
         <section id={Styles.container} className={sen.variable}>
-            <div id={Styles.div_top}>
+            <article id={Styles.div_top}>
                 <Player 
                     autoplay
                     loop
@@ -18,10 +18,10 @@ export default function About() {
                 />
 
                 <h1 id={Styles.h1}>Brushed is a French company founded by two friends who love modern art and cool designs.</h1>
-            </div>
+            </article>
             
             <div id={Styles.div_bottom}>
-                <div className={Styles.informations}>
+                <article className={Styles.informations}>
                     <Player 
                         autoplay
                         loop
@@ -29,9 +29,9 @@ export default function About() {
                         className={Styles.lottie_animations}
                     />
                     <h2 className={Styles.text_informations}>Free delivery on all purchases</h2>
-                </div>
+                </article>
 
-                <div className={Styles.informations}>
+                <article className={Styles.informations}>
                     <Player 
                         autoplay
                         loop
@@ -39,13 +39,13 @@ export default function About() {
                         className={Styles.lottie_animations}
                     />
                     <h3 className={Styles.text_informations}>UV and shock resistant</h3>
-                </div>
+                </article>
 
 
-                <div className={Styles.informations}>
+                <article className={Styles.informations}>
                     <span className={archivoBlack.variable} id={Styles.span}>limited edition</span>
                     <h3 className={Styles.text_informations}>All our posters are limited to 500 copies</h3>
-                </div>
+                </article>
             </div>
         </section>
 
