@@ -1,9 +1,8 @@
+import Header from '@/components/header';
 import '../styles/globals.css'
-import { Sen, Comfortaa, Archivo_Black } from 'next/font/google';
+import { sen } from './font';
+import Footer from '@/components/footer';
 
-export const sen = Sen({ variable: '--font-sen', subsets: ['latin'], weight: ['400', '700', '800'] })
-export const comfortaa = Comfortaa({ variable: '--font-comfortaa', subsets: ['latin']  })
-export const archivoBlack = Archivo_Black({ variable: '--font-archivo-black', subsets: ['latin'], weight: ['400'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,7 +13,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
 
-      <body>{children}</body>
+      <body className={sen.variable}>
+          <Header />
+          
+          {children}
+         
+         <Footer />
+      </body>
 
     </html>
   )

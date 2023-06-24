@@ -1,0 +1,35 @@
+
+
+#header {
+    display: flex;
+    max-height: 140px;
+    padding: 40px 100px;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--black);
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.35);
+}
+
+#logo {
+    width: 146px;
+    height: 46px;
+}
+
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+#link {
+    color: var(--white);
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--font-comfortaa);
+    font-weight: 700;
+    text-transform: capitalize;
+}

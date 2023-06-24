@@ -1,0 +1,117 @@
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 79px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+
+#container_left {
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+
+
+
+    justify-content: left;
+    text-align: left;
+}
+
+#h1 {
+    color: var(--white);
+    font-size: 84px;
+    font-family: var(--font-archivo-black);
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#span_h1 {
+    color: transparent;
+    background: linear-gradient(90deg, var(--light-blue), var(--dark-blue));
+    background-clip: text;
+    -webkit-background-clip : text;
+    -moz-background-clip: text;
+}
+
+
+#h2 {
+    color: var(--white);
+    font-size: 24px;
+    font-family: var(--font-comfortaa);
+    font-weight: 500;
+    width: 73%;
+}
+
+
+.span_h2 {
+    font-weight: bold;
+    color: var(--light-green);
+}
+
+
+#div_pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+
+    overflow: hidden;
+}
+
+#picture_behind, #picture_top, #picture_middle {
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.30);
+
+} 
+
+#picture_top {
+    width: 297px;
+    height: 445px;
+}
+
+
+#picture_middle {
+    width: 222px;
+    height: 333px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    
+    transform: rotate(6.28deg);
+    -o-transform: rotate(6.28deg);
+    -ms-transform: rotate(6.28deg);
+    -moz-transform: rotate(6.28deg);
+    -webkit-transform: rotate(6.28deg);
+
+    z-index: -2;
+
+    position: relative;
+    top: 60px;
+    right: 80px;
+}
+
+
+#picture_behind {
+    width: 159px;
+    height: 239px;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    
+    transform: rotate(13.068deg);
+    -o-transform: rotate(13.068deg);
+    -ms-transform: rotate(13.068deg);
+    -moz-transform: rotate(13.068deg);
+    -webkit-transform: rotate(13.068deg);
+
+    z-index: -3;
+
+    position: relative;
+    top: 130px;
+    right: 115px;
+
+}
