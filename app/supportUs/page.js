@@ -54,8 +54,8 @@ export default function SupportUs() {
                 </div>
 
                 <div id={Styles.counter_bar} className={archivoBlack.variable}>
+                    <span className={Styles.span_counter}>50</span>
                     <span className={Styles.span_counter}>500</span>
-                    <span className={Styles.span_counter}>1000</span>
                 </div>
                 
             </div>
