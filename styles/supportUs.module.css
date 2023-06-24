@@ -7,7 +7,8 @@
     grid-template-rows: 1fr;
     grid-column-gap: 60px;
     grid-row-gap: 0px;
-    padding: 70px 100px;
+    padding: 60px 100px;
+    padding-bottom: 0;
 }
 
 
@@ -97,7 +98,7 @@
 #div_right {
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 80px;
     
     justify-content: center;
     align-items: center;
@@ -111,21 +112,26 @@
     display: flex;
     flex-direction: row;
     gap: 102px;
+    row-gap: 80px;
 
     flex-wrap: wrap;
 
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 
+    height: 100%;
     width: 100%;
 }
 
 .articles {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 40%;
-    height: 40%;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+
+    max-height: 208px;
+    max-width: 40%;
 
     padding: 30px 20px;
 
@@ -139,4 +145,87 @@
 
 }
 
-.step_number
+
+.step_number {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font-sen);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.locker_icon {
+    color: var(--white);
+    width: 90px;
+}
+
+
+.text_unlocked {
+    display: none;
+
+    color: transparent;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-sen);
+
+    background-image: linear-gradient(90deg, var(--light-blue), var(--dark-blue));
+
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+
+#counter_bar {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+
+
+    border-radius: 50px;
+
+    background-color: var(--white);
+    
+    box-shadow: 0px 0px 100px 0px rgba(3, 247, 235, 0.20);
+    overflow: hidden;
+
+    z-index: -2;
+}
+
+#counter_bar::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(90deg, var(--light-blue), var(--dark-blue));
+    
+    width: 43.3%;
+    height: 40px;
+    max-width: 43.3% !important;
+
+    border-radius: 50px;
+    
+    overflow: hidden;
+
+    z-index: -1;
+}
+
+
+
+.span_counter {
+    color: var(--black);
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--font-archivo-black);
+    font-weight: 400;
+    padding: 0 21px;
+    
+
+
+}

@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Styles from '../../styles/supportUs.module.css'
 import { archivoBlack, comfortaa, sen } from '../font'
+import { faLock } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -22,20 +24,38 @@ export default function SupportUs() {
             <div id={Styles.div_right} className={sen.variable}>
                 <div id={Styles.container_article}>
                     <article className={Styles.articles}>
+                        <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
+                        
                         <p className={Styles.step_number}>500</p>
+
                     </article>
 
                     <article className={Styles.articles}>
+                        <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
+
                         <p className={Styles.step_number}>1000</p>
                     </article>
 
                     <article className={Styles.articles}>
+                        <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
+
                         <p className={Styles.step_number}>2000</p>
+
+                        <p className={Styles.text_unlocked}>15% discount for one month after launch</p>
                     </article>
 
                     <article className={Styles.articles}>
+                        <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
+
                         <p className={Styles.step_number}>5000</p>
+
+                        <p className={Styles.text_unlocked}>Check our social networks in the coming days</p>
                     </article>
+                </div>
+
+                <div id={Styles.counter_bar} className={archivoBlack.variable}>
+                    <span className={Styles.span_counter}>500</span>
+                    <span className={Styles.span_counter}>1000</span>
                 </div>
                 
             </div>
