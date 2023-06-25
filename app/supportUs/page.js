@@ -1,3 +1,6 @@
+"use client"
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Styles from '../../styles/supportUs.module.css'
 import { archivoBlack, comfortaa, sen } from '../font'
@@ -46,7 +49,7 @@ export default function SupportUs() {
                     <article className={Styles.articles}>
                         <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
 
-                        <p className={Styles.step_number}>5000</p>
+                        <p className={Styles.step_number}>4000</p>
 
                         <p className={Styles.text_unlocked}>Check our social networks in the coming days</p>
                     </article>
