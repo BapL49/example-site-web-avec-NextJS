@@ -1,37 +1,37 @@
+"use client"
 
+import { useEffect, useState } from 'react';
 import Styles from '../styles/counterBar.module.css'
 import { archivoBlack } from '@/app/font'
 
-import { kv } from "@vercel/kv";
 
-
-
-export default async function CounterBar() {
+export default function CounterBar() {
     
-    const counter = await kv.hget('counter:counter', 'number');
-
-    let stepValue= 500;
+    const [data, setData] = useState("null");
     
-    const onChange = () => {
-        "use server"
-        
-        if (counter >= stepValue) {
-            if (counter < 4000) {
-                
-                stepValue = stepValue *2
+    const [stepValue, setStepValue] = useState(500);
+    
+    useEffect(() => {
+        fetch('/api').then((res) => res.json()).then((data) => {
+            setData(data)
+            if (data >= stepValue) {
+                if (data < 4000) {
+                    
+                    setStepValue(stepValue *2) 
+                }
             }
-        } else {
-            counter
-        }
-    }
-    const width = stepValue / counter *100;
+        })
+    }, [])
+    
+    
+    const width = data / stepValue * 100;
 
-    console.log(result);
+    console.log(width);
 
 
     return (
         <div id={Styles.counter_bar} className={archivoBlack.variable} >
-            <span className={Styles.span_counter}>{onChange}</span>
+            <span className={Styles.span_counter}>{data}</span>
             <span className={Styles.span_counter}>{stepValue}</span>
             <div id={Styles.gradient_bar} style={{width: width + '%'}}></div>
         </div>
