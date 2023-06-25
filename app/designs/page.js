@@ -144,6 +144,7 @@ export default function Desings() {
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
                     
+                    
                 />
         </section>
     )

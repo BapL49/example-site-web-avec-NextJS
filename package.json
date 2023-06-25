@@ -14,11 +14,13 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@reduxjs/toolkit": "^1.9.5",
     "@vercel/edge-config": "^0.2.1",
     "@vercel/kv": "^0.2.2",
     "next": "^13.4.7",
     "pnpm": "^8.6.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "redux": "^4.2.1"
   }
 }
