@@ -7,6 +7,8 @@ import Image from "next/image";
 import Top from '../public/images/Infinite_Portals.jpeg'
 import Middle from '../public/images/the_way.jpg'
 import Behind from '../public/images/tunnel.jpeg'
+
+
 export default function Index() {
 
     return (

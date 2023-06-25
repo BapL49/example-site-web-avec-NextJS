@@ -2,11 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Styles from '../../styles/supportUs.module.css'
 import { archivoBlack, comfortaa, sen } from '../font'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
-
+import CounterBar from '@/components/counter_bar'
 
 
 export default function SupportUs() {
-
 
 
     return (
@@ -53,10 +52,7 @@ export default function SupportUs() {
                     </article>
                 </div>
 
-                <div id={Styles.counter_bar} className={archivoBlack.variable}>
-                    <span className={Styles.span_counter}>50</span>
-                    <span className={Styles.span_counter}>500</span>
-                </div>
+                <CounterBar />
                 
             </div>
 
