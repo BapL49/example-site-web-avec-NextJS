@@ -6,7 +6,7 @@ import { archivoBlack } from '@/app/font'
 
 export default function CounterBar() {
     
-    const [data, setData] = useState("null");
+    const [data, setData] = useState(null);
     
     const [stepValue, setStepValue] = useState(500);
     
@@ -24,8 +24,6 @@ export default function CounterBar() {
     
     
     const width = data / stepValue * 100;
-
-    console.log(width);
 
 
     return (

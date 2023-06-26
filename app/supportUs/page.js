@@ -9,7 +9,11 @@ import CounterBar from '@/components/counter_bar'
 
 
 export default function SupportUs() {
+    
 
+    const increaseCounter = () => {
+        fetch('/api').then((data) => console.log(data))
+    }
 
     return (
         <section id={Styles.container}>
@@ -20,7 +24,7 @@ export default function SupportUs() {
                 Your <span className={Styles.span_h2}>goal</span> is to reach the last square with the <span className={Styles.span_h2}>biggest surprise</span>. But be careful, you can only increase the <span className={Styles.span_h2}>counter once</span>.
                 </h2>
 
-                <button id={Styles.button}>increase the counter</button>
+                <button id={Styles.button} onClick={increaseCounter}>increase the counter</button>
             </div>
 
             <div id={Styles.div_right} className={sen.variable}>
