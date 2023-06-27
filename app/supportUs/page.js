@@ -31,10 +31,6 @@ export default function SupportUs() {
     
     const [cookies, setCookie] = useCookies(['interaction']);
 
-    useEffect(() => {
-        console.log(cookies);
-
-    }, [cookies]);
 
     const dateForCookie = new Date('2024-12-30');
 
