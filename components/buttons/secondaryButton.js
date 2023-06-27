@@ -6,7 +6,7 @@ import { comfortaa } from "@/app/font";
 export default function SecondaryButton(props) {
     return (
         
-        <Link href={props.href} className={comfortaa.variable} id={Styles.button}>{props.text}</Link>
+        <Link href={props.href} className={comfortaa.variable} id={Styles.button} style={props.style}>{props.text}</Link>
     )
 
 }
