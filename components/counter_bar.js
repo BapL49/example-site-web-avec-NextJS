@@ -4,14 +4,14 @@ import Styles from '../styles/counterBar.module.css'
 import { archivoBlack } from '@/app/font'
 
 
-export default function CounterBar() {
+export default function CounterBar(props) {
     
     const [data, setData] = useState(null);
     
     const [stepValue, setStepValue] = useState(500);
     
     useEffect(() => {
-        fetch('/api').then((res) => res.json()).then((data) => {
+        fetch('/api/get-counter-value').then((res) => res.json()).then((data) => {
             setData(data)
             if (data >= stepValue) {
                 if (data < 4000) {
@@ -28,7 +28,7 @@ export default function CounterBar() {
 
     return (
         <div id={Styles.counter_bar} className={archivoBlack.variable} >
-            <span className={Styles.span_counter}>{data}</span>
+            <span className={Styles.span_counter}>{props.increased === true ? props.value: data}</span>
             <span className={Styles.span_counter}>{stepValue}</span>
             <div id={Styles.gradient_bar} style={{width: width + '%'}}></div>
         </div>

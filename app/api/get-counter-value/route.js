@@ -10,9 +10,3 @@ export async function GET() {
 }
 
 
-export async function PUT() {
-    
-    const increaseCounter = await kv.hincrby('counter', 'number', 1);
-
-    return NextResponse.json({increaseCounter})
-}

@@ -1,19 +1,31 @@
 "use client"
 
 
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Styles from '../../styles/supportUs.module.css'
 import { archivoBlack, comfortaa, sen } from '../font'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import CounterBar from '@/components/counter_bar'
+import { useState } from 'react'
+
 
 
 export default function SupportUs() {
     
+    
+    const [counterIncreased, setCounterIncresed] = useState(false);
+    const [valueAfterIncrement, setValueAfterIncrement] = useState(null)
 
     const increaseCounter = () => {
-        fetch('/api').then((data) => console.log(data))
+        fetch('/api/increment-counter').then((res) => res.json()).then((data) => {
+            console.log(data)
+            setCounterIncresed(true)
+            setValueAfterIncrement(data)
+        })
     }
+
+
 
     return (
         <section id={Styles.container}>
@@ -59,7 +71,7 @@ export default function SupportUs() {
                     </article>
                 </div>
 
-                <CounterBar />
+                <CounterBar increased={counterIncreased} value={valueAfterIncrement}/>
                 
             </div>
 
