@@ -65,7 +65,9 @@
 }
 
 
-#button {
+
+
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,15 +88,31 @@
     font-weight: 500;
     text-transform: capitalize;
 
-    transition: all 2s ease ;
+    transition: all 300ms ease-in-out ;
 
     cursor: pointer;
 }
 
-#button:hover {
+
+.button:hover {
     background-image: linear-gradient(90deg, var(--light-blue), var(--dark-blue));
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.25);
 }
+
+
+#button_after_increased {
+    background-color: var(--white-op-50);
+    background-image: none;
+    cursor: not-allowed;
+}
+
+#button_after_increased:hover {
+    box-shadow: none;
+    background-image: none;
+}
+
+
+
 
 #div_right {
     display: flex;
@@ -128,14 +146,9 @@
 }
 
 .articles {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 
     width: 264px;
     height: 228px;
-
-
 
     padding: 30px 20px;
 
@@ -150,6 +163,20 @@
 }
 
 
+.articles_locked {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .step_number {
     color: var(--white);
     text-align: center;
@@ -158,14 +185,15 @@
     font-size: 20px;
 }
 
+
 .locker_icon {
     color: var(--white);
     height: 90px;
 }
 
 
+
 .text_unlocked {
-    display: none;
 
     color: transparent;
     font-size: 24px;
