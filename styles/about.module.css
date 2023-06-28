@@ -30,6 +30,7 @@
 #french_flag {
     width: 200px;
     height: 160px;
+    
 }
 
 #h1 {
@@ -46,6 +47,8 @@
 #div_bottom {
     display: flex;
     flex-direction: row;
+    
+
     gap: 76px;
 
     height: 432px;
@@ -109,4 +112,289 @@
     font-family: var(--font-sen);
     font-weight: 400;
     
+}
+
+
+
+@media screen and (max-width: 1222px) {
+    
+    #container {
+    
+        padding: 50px 80px;
+
+        padding-bottom: 0;
+    }
+    
+
+    #french_flag {
+        width: 180px;
+        height: 140px;
+        
+    }
+    
+    #h1 {
+        width: 60%;
+        
+        font-size: 28px;
+    }
+    
+    
+    #div_bottom {
+        gap: 60px;
+    
+        height: 400px;
+        max-height: 432px;
+    
+    }
+    
+    
+    .informations {
+        gap: 60px;
+        
+        padding: 50px 20px;
+    
+    }
+    
+    
+    .lottie_animations { 
+        width: 120px;
+        height: 120px;
+    }
+    
+    
+    #span {
+        font-size: 32px;
+        
+    }
+    
+    .text_informations {
+        
+        font-size: 28px;
+        
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    
+    #container {
+    
+        padding: 50px 60px;
+
+        padding-bottom: 50px;
+    }
+    
+
+    #french_flag {
+        width: 160px;
+        height: 120px;
+        
+    }
+    
+    #h1 {
+        width: 60%;
+        
+        font-size: 24px;
+    }
+    
+    
+    #div_bottom {
+        gap: 50px;
+    
+        height: 350px;
+        max-height: 432px;
+    
+    }
+    
+    
+    .informations {
+        gap: 40px;
+        
+        padding: 50px 20px;
+    
+    }
+    
+    
+    .lottie_animations { 
+        width: 100px;
+        height: 100px;
+    }
+    
+    
+    #span {
+        font-size: 28px;
+        
+    }
+    
+    .text_informations {
+        
+        font-size: 24px;
+        
+    }
+}
+
+@media screen and (max-width: 782px) {
+    
+    #container {
+    
+        gap: 80px;
+
+        padding: 30px 40px;
+
+        padding-bottom: 40px;
+
+    }
+    
+
+    #french_flag {
+        width: 140px;
+        height: 100px;
+        
+    }
+    
+    #h1 {
+        width: 60%;
+        
+        font-size: 20px;
+    }
+    
+    
+    #div_bottom {
+        flex-direction: column;
+
+        gap: 40px;
+    
+        height: fit-content;
+    
+    }
+    
+    
+    .informations {
+
+        gap: 25px;
+        
+        padding: 20px 20px;
+
+
+    
+    }
+    
+    
+    .lottie_animations { 
+        width: 80px;
+        height: 80px;
+    }
+    
+    
+    #span {
+        font-size: 24px;
+        
+    }
+    
+    .text_informations {
+        
+        font-size: 20px;
+        
+    }
+}
+
+
+@media screen and (max-width: 538px) {
+    
+    #container {
+    
+        gap: 40px;
+
+        padding: 50px 20px;
+
+
+    }
+    
+
+    #div_top {
+        
+        
+        padding: 0px 20px;
+    
+    }
+
+
+    #french_flag {
+        width: 120px;
+        height: 80px;
+        
+    }
+    
+    #h1 {
+        width: 65%;
+        
+        font-size: 16px;
+    }
+    
+    
+    #div_bottom {
+        flex-direction: column;
+
+        gap: 40px;
+    
+        height: fit-content;
+    
+    }
+    
+    
+    .informations {
+
+        gap: 20px;
+        
+        padding: 10px 10px;
+
+
+    
+    }
+    
+    
+    .lottie_animations { 
+        width: 60px;
+        height: 60px;
+    }
+    
+    
+    #span {
+        font-size: 20px;
+        
+    }
+    
+    .text_informations {
+        
+        font-size: 16px;
+        
+    }
+}
+
+
+@media screen and (max-width: 444px) {
+    
+
+    #div_top {
+        flex-direction: column;
+
+        padding: 20px 20px;
+
+        gap: 20px;
+
+        height: fit-content;
+        max-height: none;
+    
+    }
+
+
+
+    
+    #h1 {
+        width: 100%;
+        
+        font-size: 16px;
+    }
+    
+
 }
