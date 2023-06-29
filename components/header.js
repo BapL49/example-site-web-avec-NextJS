@@ -32,10 +32,10 @@ export default function Header() {
                 alt="logo Brushed"
             /></Link>
 
-            <nav id={responsive === true ? Styles.nav_active : Styles.nav} className={comfortaa.variable}>
+            <nav id={responsive === true ? Styles.nav_active : Styles.nav} className={comfortaa.variable} onClick={burgerMenuState}>
                 <Link href='/about' id={Styles.link} className={pathname == "/about" ? Styles.link_active : ""} style={responsive == true ? {display: "inline"} : null} >What's Brushed ?</Link>
                 <Link href='/designs' id={Styles.link} className={pathname == "/designs" ? Styles.link_active : ""} style={responsive == true ? {display: "inline"} : null} >Discover some design</Link>
-                <SecondaryButton href="/supportUs" text="support us" style={responsive == true ? {display: "inline"} : null}/>
+                <SecondaryButton href="/supportUs" text="support us" style={responsive == true ? {display: "inline"} : null} />
                 <div className={Styles.container_burger} id={responsive === true ? Styles.container_burger_active : ""} onClick={burgerMenuState}>
                     <span className={Styles.burger} id={responsive === true ? Styles.burger_top : ""}></span>
                     <span className={Styles.burger} id={responsive === true ? Styles.burger_middle : ""}></span>

@@ -17,6 +17,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "@vercel/edge-config": "^0.2.1",
     "@vercel/kv": "^0.2.2",
+    "framer-motion": "^10.12.17",
     "next": "^13.4.7",
     "pnpm": "^8.6.3",
     "react": "^18.2.0",
