@@ -16,6 +16,11 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Brushed - modern metal poster | Discover Modern Masterpieces',
     description: 'Explore the Brushed contemporary art marketplace and discover a curated collection of modern metals posters. Immerse yourself in the vibrant world of contemporary art. Visit us today!',
+
+  },
+  robots: {
+    index: true,
+    follow: true,
     
   }
 }
