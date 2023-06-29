@@ -22,12 +22,12 @@
 }
 
 #gradient_bar {
-    position: absolute;
+    position: relative;
     background-image: linear-gradient(90deg, var(--light-blue), var(--dark-blue));
     
     width: 0%;
     height: 50px;
-    max-width: 43.3% !important;
+    max-width: 100% !important;
 
     border-radius: 50px;
     
@@ -39,6 +39,7 @@
 
 
 .span_counter {
+    position: absolute;
     color: var(--black);
     text-align: center;
     font-size: 24px;
@@ -46,4 +47,89 @@
     font-weight: 400;
     padding: 0 21px;
 
+}
+
+#absolute {
+    right: 5.5%;
+}
+
+@media screen and (max-width: 1278px) {
+    
+    #counter_bar {    
+        height: 45px;
+    
+    
+    }
+    
+    #gradient_bar {
+        
+        height: 45px;
+    }
+    
+        
+}
+
+@media screen and (max-width: 542px) {
+    
+    #counter_bar {    
+        height: 35px;
+    
+    
+    }
+    
+    #gradient_bar {
+        
+        height: 35px;
+    }
+    
+    
+    .span_counter {
+        font-size: 20px;
+        
+        padding: 0 17px;
+
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    
+    #counter_bar {    
+        height: 30px;
+    
+    
+    }
+    
+    #gradient_bar {
+        
+        height: 30px;
+
+
+    }
+    
+    
+    .span_counter {
+        font-size: 20px;
+        
+        padding: 0 17px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+    
+
+    
+    .span_counter {
+        font-size: 16px;
+        
+        padding: 0 15px;
+
+    }
+
+    #absolute {
+        right: 1%;
+    }
 }

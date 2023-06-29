@@ -130,11 +130,8 @@
 
 #container_article {
     display: flex;
-    flex-direction: row;
-    gap: 102px;
-    row-gap: 90px;
-
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 60px;
 
     justify-content: center;
 
@@ -144,6 +141,16 @@
 
 
 }
+
+
+.sub_container_article {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    justify-content: center;
+}
+
 
 .articles {
 
@@ -210,3 +217,634 @@
 }
 
 
+
+@media screen and (max-width: 1434px) {
+    #container {
+        
+        padding: 50px 80px;
+        padding-bottom: 0;
+    }
+    
+    
+    #div_left {
+        gap: 40px;
+    
+    }
+    
+    
+    
+    #h1 {
+        font-size: 72px;
+    
+        width: 100%;
+    }
+    
+
+    
+    #h2 {
+        width: 75%;
+        line-height: 30px;
+    }
+    
+    
+    #container_article {
+        gap: 50px;
+        
+    
+    }
+    
+    
+    .sub_container_article {
+        gap: 50px;
+    
+    }
+    
+    
+
+}
+
+
+@media screen and (max-width: 1278px) {
+    
+    #container {
+        
+        padding: 40px 80px;
+        padding-bottom: 0;
+    }
+    
+    
+    #div_left {
+        gap: 40px;
+    
+    }
+    
+    
+    
+    #h1 {
+        font-size: 68px;
+    
+        width: 100%;
+    }
+    
+
+    
+    #h2 {
+        width: 80%;
+    }
+    
+    
+    #container_article {
+        gap: 40px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 40px;
+    
+    }
+
+
+    .articles {
+
+        width: 220px;
+        height: 220px;
+    
+        padding: 20px 10px;
+    
+    
+    }
+    
+    
+    .locker_icon {
+        height: 80px;
+    }
+    
+    
+    
+    .text_unlocked {
+    
+        font-size: 20px;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 1146px) {
+    
+    #container {
+        
+        padding: 40px 60px;
+        padding-bottom: 0;
+    }
+    
+    
+    #div_left {
+        gap: 35px;
+    
+    }
+    
+    
+    
+    #h1 {
+        font-size: 60px;
+    
+        width: 100%;
+    }
+    
+
+    
+    #h2 {
+        width: 100%;
+    }
+    
+    
+    .button {
+        
+        padding: 15px 20px ;
+    
+        font-size: 20px;
+    }
+
+
+    #container_article {
+        gap: 40px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 40px;
+    
+    }
+
+
+    .articles {
+
+        width: 220px;
+        height: 220px;
+    
+        padding: 20px 10px;
+    
+    
+    }
+    
+    
+    .locker_icon {
+        height: 70px;
+    }
+    
+    
+    
+    .text_unlocked {
+    
+        font-size: 20px;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 990px) {
+    
+    #container {
+        
+        padding: 40px 40px;
+    }
+    
+    
+    #div_left {
+        gap: 40px;
+    
+    }
+    
+    
+    
+    #h1 {
+        font-size: 52px;
+    
+        width: 100%;
+    }
+    
+
+
+    #container_article {
+        gap: 30px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 30px;
+    
+    }
+
+
+    .articles {
+
+        width: 200px;
+        height: 200px;
+    
+        padding: 20px 20px;
+    
+    
+    }
+    
+    
+    .locker_icon {
+        height: 60px;
+    }
+    
+    .step_number {
+        font-size: 16px;
+    }
+    
+    
+    
+
+}
+
+
+@media screen and (max-width: 884px) {
+    
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 60px;
+
+        padding: 40px 40px;
+    }
+    
+    
+    #div_left {
+        gap: 40px;
+        
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    
+    
+    #h1 {
+        font-size: 52px;
+    
+        width: 100%;
+    }
+    
+
+    #div_right {
+        
+        flex-direction: column-reverse;
+    
+    }
+    
+
+    #container_article {
+        gap: 80px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 80px;
+    
+    }
+
+
+    .articles {
+
+        width: 240px;
+        height: 240px;
+    
+        padding: 20px 20px;
+    
+    
+    }
+    
+    
+    .locker_icon {
+        height: 80px;
+    }
+    
+    .step_number {
+        font-size: 20px;
+    }
+    
+    
+    
+
+}
+
+
+@media screen and (max-width: 758px) {
+    
+    #container {
+        grid-row-gap: 50px;
+
+        padding: 40px 20px;
+    }
+    
+    
+    #div_left {
+        gap: 30px;
+        
+    }
+    
+    
+    
+    #h1 {
+        font-size: 48px;
+    
+    }
+    
+    #h2 {
+        font-size: 16px;    
+        line-height: 24px;
+    }   
+
+
+    #div_right {
+            
+        gap: 50px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 614px) {
+    
+    #container {
+
+        padding: 30px 20px;
+    }
+    
+    
+    
+    #h1 {
+        font-size: 44px;
+    
+    }
+    
+
+    #container_article {
+        gap: 40px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 40px;
+    
+    }
+
+
+    .articles {
+
+        width: 40%;
+        height: 40%;
+    
+    
+    
+    }
+    
+    
+    .locker_icon {
+        height: 40px;
+    }
+    
+    .step_number {
+        font-size: 16px;
+    }
+    
+    
+    .text_unlocked {
+    
+        font-size: 16px;
+    
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 422px) {
+    
+    #container {
+
+        padding: 20px 20px;
+    }
+    
+    
+    
+    #h1 {
+        font-size: 36px;
+    
+    }
+    
+    #h2 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .button {
+
+        padding: 15px 15px ;
+    
+
+        font-size: 16px;
+
+    }
+
+
+    #container_article {
+        gap: 30px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 30px;
+    
+    }
+
+
+    .articles {
+
+        width: 150px;
+        height: 150px;
+    
+        padding: 30px 30px;
+    
+    }
+    
+    
+    
+    .text_unlocked {
+    
+        font-size: 16px;
+    
+    }
+    
+
+}
+
+
+@media screen and (max-width: 376px) {
+    
+    #container {
+
+        padding: 20px 20px;
+    }
+    
+    
+    
+    #h1 {
+        font-size: 36px;
+    
+    }
+    
+    #h2 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .button {
+
+        padding: 15px 15px ;
+    
+
+        font-size: 16px;
+
+    }
+
+
+    #container_article {
+        gap: 30px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 30px;
+    
+    }
+
+
+    .articles {
+
+        width: 150px;
+        height: 150px;
+    
+        padding: 15px 15px;
+    
+    }
+    
+    
+    
+    .text_unlocked {
+    
+        font-size: 16px;
+    
+    }
+    
+
+}
+
+
+@media screen and (max-width: 350px) {
+    
+    #container {
+
+        padding: 10px 10px;
+    }
+    
+    
+    
+    #h1 {
+        font-size: 28px;
+    
+    }
+
+    
+    .button {
+
+        padding: 10px 10px ;
+    
+
+        font-size: 12px;
+
+    }
+
+
+    #container_article {
+        gap: 25px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 25px;
+    
+    }
+
+
+    .articles {
+
+        width: 140px;
+        height: 140px;
+    
+    
+    }
+    
+    
+    
+    .text_unlocked {
+    
+        font-size: 16px;
+    
+    }
+    
+
+}
+
+
+@media screen and (max-width: 320px) {
+    
+
+
+    #container_article {
+        gap: 15px;
+        
+    }
+    
+    
+    .sub_container_article {
+        gap: 15px;
+    
+    }
+
+
+    .articles {
+
+        width: 130px;
+        height: 130px;
+    
+    
+    }
+    
+    
+    
+    .text_unlocked {
+    
+        font-size: 16px;
+    
+    }
+    
+
+}

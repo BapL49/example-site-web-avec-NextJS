@@ -21,7 +21,7 @@ export default function SupportUs() {
     const [data, setData] = useState(null);
     
     useEffect(() => {
-        fetch('/api/get-counter-value', { next: { revalidate: 60}}).then((res) => res.json()).then((data) => {
+        fetch('/api/get-counter-value').then((res) => res.json()).then((data) => {
             setData(data)
         })
     }, [])
@@ -67,53 +67,61 @@ export default function SupportUs() {
 
                 <div id={Styles.div_right} className={sen.variable}>
                     <div id={Styles.container_article}>
-                        <article className={Styles.articles}>
-                            
-                            {data >= 500 ? ""
-                            : 
-                            <div className={Styles.articles_locked}>
-                                <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
-                                <p className={Styles.step_number}>500</p>
-                            </div>
-                            }
-                            
-                        </article>
+                        <div className={Styles.sub_container_article}>
+                            <article className={Styles.articles}>
+                                
+                                {data >= 500 ? ""
+                                : 
+                                <div className={Styles.articles_locked}>
+                                    <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
+                                    <p className={Styles.step_number}>500</p>
+                                </div>
+                                }
+                                
+                            </article>
 
-                        <article className={Styles.articles}>
-                            
-                            {data >= 1000 ? "" 
-                            : 
-                            <div className={Styles.articles_locked}>
-                                <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
-                                <p className={Styles.step_number}>1000</p>
-                            </div>
-                            }
-                            
-                        </article>
+                            <article className={Styles.articles}>
+                                
+                                {data >= 1000 ? "" 
+                                : 
+                                <div className={Styles.articles_locked}>
+                                    <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
+                                    <p className={Styles.step_number}>1000</p>
+                                </div>
+                                }
+                                
+                            </article>
 
-                        <article className={Styles.articles}>
-                            
-                            {data >= 2000 ? <p className={Styles.text_unlocked}>15% discount for one month after launch</p>
-                            :   
-                            <div className={Styles.articles_locked}>
-                                <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
-                                <p className={Styles.step_number}>2000</p>
-                            </div>
-                            }
-                            
-                        </article>
+                        </div>
 
-                        <article className={Styles.articles}>
-                            
-                            {data >= 4000 ? <p className={Styles.text_unlocked}>Check our social networks in the coming days</p>
-                            : 
-                            <div className={Styles.articles_locked}>
-                                <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
-                                <p className={Styles.step_number}>4000</p>
-                            </div>
-                            }
-                                                    
-                        </article>
+                        <div className={Styles.sub_container_article}>
+                            <article className={Styles.articles}>
+                                
+                                {data >= 2000 ? <p className={Styles.text_unlocked}>15% discount for one month after launch</p>
+                                :   
+                                <div className={Styles.articles_locked}>
+                                    <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
+                                    <p className={Styles.step_number}>2000</p>
+                                </div>
+                                }
+                                
+                            </article>
+
+                            <article className={Styles.articles}>
+                                
+                                {data >= 4000 ? <p className={Styles.text_unlocked}>Check our social networks in the coming days</p>
+                                : 
+                                <div className={Styles.articles_locked}>
+                                    <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
+                                    <p className={Styles.step_number}>4000</p>
+                                </div>
+                                }
+                                                        
+                            </article>
+
+
+                        </div>
+
                     </div>
 
                     <CounterBar value={data}/>
