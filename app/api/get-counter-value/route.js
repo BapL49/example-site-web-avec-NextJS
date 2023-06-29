@@ -9,4 +9,5 @@ export async function GET() {
     return NextResponse.json(counter);
 }
 
+export const revalidate = 30 ;
 
