@@ -153,11 +153,13 @@
 
 
 .articles {
+    display: flex;
+    flex-direction: column;
 
     width: 264px;
     height: 228px;
 
-    padding: 30px 20px;
+    padding: 20px 20px;
 
     justify-content: center;
     align-items: center;
@@ -166,7 +168,7 @@
     background: rgba(33, 31, 32, 0.20);
 
     box-shadow: var(--box-shadow);
-
+    
 }
 
 
@@ -180,6 +182,7 @@
 
     width: 100%;
     height: 100%;
+
 }
 
 
@@ -605,8 +608,8 @@
 
     .articles {
 
-        width: 40%;
-        height: 40%;
+        width: 200px;
+        height: 200px;
     
     
     
@@ -628,6 +631,20 @@
     
     }
     
+
+}
+
+
+@media screen and (max-width: 484px) {
+    
+    .articles {
+
+        width: 180px;
+        height: 180px;
+    
+    
+    
+    }
 
 }
 
@@ -679,7 +696,6 @@
         width: 150px;
         height: 150px;
     
-        padding: 30px 30px;
     
     }
     
@@ -687,7 +703,7 @@
     
     .text_unlocked {
     
-        font-size: 16px;
+        font-size: 12px;
     
     }
     
@@ -738,8 +754,8 @@
 
     .articles {
 
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
     
         padding: 15px 15px;
     
@@ -747,11 +763,6 @@
     
     
     
-    .text_unlocked {
-    
-        font-size: 16px;
-    
-    }
     
 
 }
@@ -794,21 +805,7 @@
     }
 
 
-    .articles {
-
-        width: 140px;
-        height: 140px;
     
-    
-    }
-    
-    
-    
-    .text_unlocked {
-    
-        font-size: 16px;
-    
-    }
     
 
 }
@@ -828,23 +825,5 @@
         gap: 15px;
     
     }
-
-
-    .articles {
-
-        width: 130px;
-        height: 130px;
-    
-    
-    }
-    
-    
-    
-    .text_unlocked {
-    
-        font-size: 16px;
-    
-    }
-    
 
 }

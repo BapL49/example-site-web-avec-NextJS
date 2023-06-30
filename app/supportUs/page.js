@@ -77,7 +77,7 @@ export default function SupportUs() {
                         <div className={Styles.sub_container_article}>
                             <article className={Styles.articles}>
                                 
-                                {data >= 500 ? ""
+                                {data >= 500 ? <p className={Styles.text_unlocked}>Affiliate system with 15% commission available to all who wish to participate</p>
                                 : 
                                 <div className={Styles.articles_locked}>
                                     <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
@@ -89,7 +89,7 @@ export default function SupportUs() {
 
                             <article className={Styles.articles}>
                                 
-                                {data >= 1000 ? "" 
+                                {data >= 1000 ? <p className={Styles.text_unlocked}>collection of 3 metal posters per month, designed and chosen by the community (with payment to the chosen artist).</p>
                                 : 
                                 <div className={Styles.articles_locked}>
                                     <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
