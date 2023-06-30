@@ -14,6 +14,7 @@ import image8 from '../../public/images/somewhere.jpg'
 import image9 from '../../public/images/teleportation.jpeg'
 import image10 from '../../public/images/the_pic.jpg'
 
+import { motion } from 'framer-motion'
 
 export default function Desings() {
 
@@ -44,7 +45,11 @@ export default function Desings() {
     
 
     return (
-        <section id={Styles.container}>
+        <motion.section id={Styles.container}
+            initial={{ opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{ ease: "easeInOut", duration: 0.5}}
+        >
                 <Image 
                     src={image1}
                     alt="Desings of poster"
@@ -146,6 +151,6 @@ export default function Desings() {
                     
                     
                 />
-        </section>
+        </motion.section>
     )
 }

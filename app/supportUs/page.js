@@ -13,6 +13,7 @@ import { useEffect, useState } from 'react'
 import { CookiesProvider } from 'react-cookie'
 import { useCookies } from 'react-cookie'
 
+import { motion } from 'framer-motion'
 
 
 export default function SupportUs() {
@@ -37,7 +38,9 @@ export default function SupportUs() {
 
     // handlers
 
+
     const onClickHandler = () => {
+
         fetch('/api/increment-counter').then((res) => res.json()).then((data) => {
             setCounterIncresed(true)
             setData(data)
@@ -56,7 +59,7 @@ export default function SupportUs() {
         <CookiesProvider>
             <section id={Styles.container}>
                 <div className={comfortaa.variable} id={Styles.div_left}>
-                    <h1 className={archivoBlack.variable} id={Styles.h1}>Unlock some <span id={Styles.span_h1}>good things</span></h1>
+                    <h1 className={archivoBlack.variable} id={Styles.h1}>Unlock some <motion.span id={Styles.span_h1} initial={{opacity: 0}} animate={{opacity: 1}} transition={{ease: "easeInOut", duration: 0.7, delay: 0.5}}>good things</motion.span></h1>
                     
                     <h2  id={Styles.h2}>At each level <span className={Styles.span_h2}>reached</span> , a square with a surprise becomes available.<br/>
                     Your <span className={Styles.span_h2}>goal</span> is to reach the last square with the <span className={Styles.span_h2}>biggest surprise</span>. But be careful, you can only increase the <span className={Styles.span_h2}>counter once</span>.
@@ -66,7 +69,11 @@ export default function SupportUs() {
                 </div>
 
                 <div id={Styles.div_right} className={sen.variable}>
-                    <div id={Styles.container_article}>
+                    <motion.div id={Styles.container_article}
+                        initial={{scale: 0.5, opacity: 0}}
+                        animate={{scale: 1, opacity: 1}}
+                        transition={{ ease: "easeInOut", duration: 0.5}}
+                    >
                         <div className={Styles.sub_container_article}>
                             <article className={Styles.articles}>
                                 
@@ -122,7 +129,7 @@ export default function SupportUs() {
 
                         </div>
 
-                    </div>
+                    </motion.div>
 
                     <CounterBar value={data}/>
                     
