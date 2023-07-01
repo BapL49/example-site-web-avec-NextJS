@@ -24,7 +24,7 @@ export default function About() {
                     id={Styles.french_flag}
                 />
 
-                <h1 id={Styles.h1}>Brushed is a French company founded by two friends who love modern art and cool designs.</h1>
+                <h1 id={Styles.h1}>Brushed is a French metal poster company founded by two friends who love modern art and cool designs.</h1>
             </motion.article>
             
             <motion.div id={Styles.div_bottom}
@@ -52,10 +52,10 @@ export default function About() {
                     <Player 
                         autoplay
                         loop
-                        src="https://assets5.lottiefiles.com/packages/lf20_ijxwkfza.json"
+                        src="https://assets8.lottiefiles.com/packages/lf20_gw1zzx1s.json"
                         className={Styles.lottie_animations}
                     />
-                    <h3 className={Styles.text_informations}>UV and shock resistant</h3>
+                    <h3 className={Styles.text_informations}>a wide choice of metal posters for all your needs</h3>
                 </motion.article>
 
 
