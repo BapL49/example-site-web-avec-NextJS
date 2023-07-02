@@ -77,7 +77,7 @@ export default function SupportUs() {
                         <div className={Styles.sub_container_article}>
                             <article className={Styles.articles}>
                                 
-                                {data >= 500 ? <p className={Styles.text_unlocked}>Affiliate system with 15% commission available to all who wish to participate</p>
+                                {data >= 500 ? <p className={Styles.text_unlocked}>loyalty program to earn discounts and other rewards</p>
                                 : 
                                 <div className={Styles.articles_locked}>
                                     <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
@@ -104,7 +104,7 @@ export default function SupportUs() {
                         <div className={Styles.sub_container_article}>
                             <article className={Styles.articles}>
                                 
-                                {data >= 2000 ? <p className={Styles.text_unlocked}>15% discount for one month after launch</p>
+                                {data >= 2000 ? <p className={Styles.text_unlocked}>10% discount for one month after launch</p>
                                 :   
                                 <div className={Styles.articles_locked}>
                                     <FontAwesomeIcon icon={faLock} className={Styles.locker_icon}/>
