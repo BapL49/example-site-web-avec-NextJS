@@ -57,6 +57,10 @@ export default function Index() {
           placeholder="blur"
           loading="lazy"
           id={Styles.picture_top}
+
+          width={297}
+          height={445}
+          objectFit="cover"
         />
 
         <Image
@@ -65,6 +69,10 @@ export default function Index() {
           placeholder="blur"
           loading="lazy"
           id={Styles.picture_middle}
+
+          width={222}
+          height={333}
+          objectFit="cover"
         />
 
         <Image
@@ -73,6 +81,10 @@ export default function Index() {
           placeholder="blur"
           loading="lazy"
           id={Styles.picture_behind}
+
+          width={159}
+          height={239}
+          objectFit="cover"
         />
       </motion.div>
     </section>

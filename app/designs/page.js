@@ -58,6 +58,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -68,6 +72,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -78,6 +86,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -88,6 +100,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -98,6 +114,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -108,6 +128,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -118,6 +142,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -128,6 +156,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -138,6 +170,10 @@ export default function Desings() {
                     className={Styles.image}
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
+
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                     
                 />
                 <Image 
@@ -149,7 +185,9 @@ export default function Desings() {
                     onMouseMove={handleHover}
                     onMouseLeave={resetStyles}
                     
-                    
+                    width={145}
+                    height={215}
+                    objectFit='cover'
                 />
         </motion.section>
     )

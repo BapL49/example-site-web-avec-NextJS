@@ -35,6 +35,9 @@ export default function Header() {
           placeholder="blur"
           loading="lazy"
           alt="logo Brushed"
+
+          width={146}
+          objectFit="cover"
         />
       </Link>
 
